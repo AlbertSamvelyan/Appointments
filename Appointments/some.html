@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="some.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../Appointments/some.js"></script>
+    <title>Figma Appopintments</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__hamburger">
+                    <button class="hamburger" onclick="hamburger()">
+                        <img src="../Appointments/menu.svg" alt="">
+                    </button>
+                </div>
+                <div class="header__nav"> 
+                    <div class="nav">
+                        <ul class="nav__items">
+                            <li class="nav__item">
+                                <a href="#">Needs</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Price List</a>
+                            </li>
+                            <li class="nav__item nav__item_dropdown">
+                                <a href="#">Treatements</a>
+                                <ul>
+                                    <li><a href="#">Sub Treatement 1</a></li>
+                                    <li><a href="#">Sub Treatement 2</a></li>
+                                    <li><a href="#">Sub Treatement 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Surgical</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#">Dental</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__logo">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__book">
+                    <a class="book" href="tel:+37444007171">Book Now</a>
+                </div>
+                <div class="header__info">
+                    <a class="header__phone" href="tel:+37444007171">+374 44 007171</a>
+                </div>
+                <div class="header__search">
+                    <button class="search" onclick="search()">
+                        <img src="../Appointments/search_white.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="appointment-search">
+                <div class="appointment-search__label">
+                    <h4>Choose Your Appointment</h4>
+                </div>
+                <div class="appointment-search__search">
+                    <input type="search" placeholder="Search..." />
+                </div>
+            </div>
+            <div class="appointment-schedule">
+                <h2 class="appointment-schedule__title">
+                    Schedule an Appointment
+                </h2>
+                <div class="appointment-schedule__content">
+                    <div class="appointment-schedule__menu">
+                        <ul>
+                            <li>
+                                Aestheic & Anti-Aging
+                                <ul>
+                                    <li>
+                                        Doctor Consultation
+                                    </li>
+                                    <li>
+                                        Injection
+                                        <ul>
+                                            <li>
+                                                Dermal Filler Injections
+                                            </li>
+                                            <li>
+                                                Botulinum Toxin
+                                            </li>
+                                            <li>
+                                                Fat Burner Injection
+                                            </li>
+                                            <li>
+                                                Mesotheraphy
+                                            </li>
+                                            <li>
+                                                PRP
+                                                <ul>
+                                                    <li>PRP Hair</li>
+                                                    <li>PRP Face & Neck</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Devices
+                                    </li>
+                                    <li>
+                                        Skin Treatment
+                                    </li>
+                                    <li>
+                                        IV Drips
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Hardware Cosmetology
+                            </li>
+                            <li>
+                                Plastic Surgery
+                            </li>
+                            <li>
+                                Dental
+                            </li>
+                            <li>
+                                Hair Transplant
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="appointment-schedule__image">
+                        <img src="../Appointments/girl.png" alt="Girl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

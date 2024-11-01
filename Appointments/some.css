@@ -1,0 +1,331 @@
+
+/*header*/
+
+.header {
+    padding: 30px 0 30px 0;
+    background-color: #010114;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info .header__phone {
+    padding-left: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    background-image: url("../Appointments/phone.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.header__content .header__hamburger {
+    display: none;
+}
+
+.header__content .header__book {
+    display: none;
+}
+
+.header__content .header__search {
+    display: none;
+}
+
+/*nav*/
+.nav .nav__items {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .nav__items .nav__item {
+    padding-right: 15px;
+    position: relative;
+    display:inline-block;
+}
+
+.nav .nav__items .nav__item_dropdown > a {
+    background-image: url("../Appointments/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 12px;
+    display: block;
+}
+
+.nav .nav__items .nav__item:last-child {
+    padding-right: 0px;
+}
+
+.nav .nav__items .nav__item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: block;
+}
+
+.nav .nav__items .nav__item ul {
+    display: none;
+    width: max-content;
+    position: absolute;
+    padding: 16px 5px 5px 5px;
+    margin: 0;
+    left: 0;
+    background-color: #010114;
+    color:white;
+}
+
+.nav .nav__items .nav__item ul li {
+    display: block;
+    padding: 3px;
+}
+
+.nav .nav__items .nav__item_dropdown:hover ul {
+    display: block;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+/* appointment-search */
+.appointment-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+}
+
+.appointment-search__search input {
+    width: 252px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background-image: url("../Appointments/search.svg");
+    background-repeat: no-repeat;
+    background-position: left 24px center;
+    padding: 20px 12px 20px 64px;
+    height: 56px;
+    border: 1px solid #CED4DA;
+    outline: none;
+}
+
+.appointment-search__label h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* appointment-schedule */
+.appointment-schedule__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.appointment-schedule__image {
+    width: 72%;
+}
+
+.appointment-schedule__menu {
+    width: 25%;
+}
+
+.appointment-schedule__image img {
+    width: 100%;
+}
+
+.appointment-schedule__menu ul {
+    height: auto;
+    margin: 0;
+    padding: 10px 0px;
+    background-color: #F1F1F1;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #010114;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.active {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 0px;
+    background-color: #F1F1F1;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #010114;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.active-parent {
+   display: flex !important;
+   background-color: white !important;
+}
+
+.active-parent li {
+    color: gray;
+}
+
+.active:nth-child(2) > li:hover {
+    color: green !important;
+}
+
+.appointment-schedule__menu ul li ul {
+    display: none;
+}
+
+.appointment-schedule__menu ul li {
+    padding: 24px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* Responsivenes */
+@media (max-width: 576px) { 
+    .header__nav {
+        display: none;
+    }
+
+    .header__content .header__hamburger {
+        display: block;
+    }
+
+    .header__content .header__search {
+        display: block;
+    }
+
+    .header__content .header__info {
+        display: none;
+    }
+
+    .header__content .header__book {
+        display: block;
+        width: 120px;
+        height: 54px; 
+        border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+
+    .header__content .header__book a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .header__content .header__hamburger .hamburger {
+        outline: none;
+        background: none;
+        border: none;
+    }
+
+    .header__content .header__search .search {
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    .nav-mob {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:115px;
+        left: 0;
+        z-index: 100;
+        background-color: black;
+    }
+
+    .nav-mob ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px !important;
+    }
+
+    .nav-mob ul li {
+        padding: 0 !important;
+        margin: 30px 0;
+    }
+
+    .nav-mob ul li a {
+        font-size: 24px !important;
+    }
+
+    .nav-mob ul li ul {
+        position: static !important;
+        margin-top: 0 !important;
+    }
+
+    .nav-mob ul li ul li {
+        margin: 5px 0;
+    }
+
+    .nav-mob ul li ul li a {
+        font-size: 20px !important;
+    }
+
+    .appointment-schedule__menu li {
+        background: none !important;
+    }
+
+    .appointment-schedule__menu ul li ul {
+        position: static !important;;
+    }
+    
+    .appointment-schedule__image {
+        display: none;
+    }
+
+    .appointment-schedule__menu {
+        width: 100%;
+    }
+
+    .appointment-search {
+        display: none;
+    }
+
+    .appointment-search {
+        flex-direction: column;
+    }
+
+    .appointment-search__label {
+        text-align: center;
+    }
+
+    .appointment-search__search {
+        width: 100%;
+    }
+
+    .appointment-search__search input {
+        width: 100%;
+    }
+
+    .appointment-schedule {
+        margin-top: 30px;
+    }
+}
